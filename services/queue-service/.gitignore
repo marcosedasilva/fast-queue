@@ -1,0 +1,21 @@
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+test_*.db
+test_db.db
+
+# --- FIREBASE SECRETS (CRÍTICO) ---
+# Se o seu arquivo tem outro nome, adicione aqui
+firebase.json
+firebase-credentials.json
+
+# --- AMBIENTE ---
+.env
