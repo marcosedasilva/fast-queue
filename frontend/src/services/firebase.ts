@@ -5,12 +5,12 @@ import { connectFirestoreEmulator } from 'firebase/firestore';
 import { connectAuthEmulator } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDlKujiaqB4zUiSRGLkVZikyfiA8yDUVKQ",
-  authDomain: "fast-queue-493301.firebaseapp.com",
-  projectId: "fast-queue-493301",
-  storageBucket: "fast-queue-493301.firebasestorage.app",
-  messagingSenderId: "301062546773",
-  appId: "1:301062546773:web:c47fb788cfe555a5e4fbdc"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
